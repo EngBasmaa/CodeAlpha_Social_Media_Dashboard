@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Dashboard</title>
+
+    <!-- LINK TO CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- LINKS TO BOXICON -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ========================================NAVBAR SECTION START================================================== -->
+    <nav>
+      <div class="container">
+        <h2 class="logo">hiChat</h2>
+
+        <div class="search-bar">
+          <i class="bx bx-search"></i>
+          <input
+            type="search"
+            name=""
+            id=""
+            placeholder="Search for creators, inspirations and projects"
+          />
+        </div>
+
+        <div class="create">
+          <label class="btn btn-primary" for="create-post"> Create </label>
+          <div class="profile-picture">
+            <img src="images/profile1.jpg" alt="DP" />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========================================NAVBAR SECTION END================================================== -->
+
+    <!-- ========================================MAIN SECTION START================================================== -->
+    <main>
+      <div class="container">
+        <!-- ========================================LEFT MAIN SECTION START================================================== -->
+        <div class="left">
+          <a class="profile">
+            <div class="profile-picture">
+              <img src="images/profile1.jpg" alt="DP" />
+            </div>
+            <div class="handle">
+              <h4>Lawal Toheeb</h4>
+              <p class="text-muted">@uptech</p>
+            </div>
+          </a>
+
+          <!-- ----------------------------------SIDE BAR STARsT------------------------------------------ -->
+
+          <div class="sidebar">
+            <a class="menu-item active">
+              <span> <i class="bx bx-home"></i> </span>
+              <h3>Home</h3>
+            </a>
+            <a class="menu-item">
+              <span> <i class="bx bx-compass"></i> </span>
+              <h3>Explores</h3>
+            </a>
+            <a class="menu-item" id="notifications">
+              <span>
+                <i class="bx bx-bell">
+                  <small class="notification-count"> 9+</small></i
+                >
+              </span>
+              <h3>Notifications</h3>
+              <div class="notifications-popup">
+                <div>
+                  <div class="profile-picture">
+                    <img src="images/profile3.jpg" alt="DP" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Keke Banjamin </b> accepted your friend request
+                    <small class="text-muted"> 2 DAYS AGO </small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="profile-picture">
+                    <img src="images/profile1.jpg" alt="DP" />
+                  </div>
+                  <div class="notification-body">
+                    <b> Idris Wahab </b> accepted your friend request
+                    <small class="text-muted"> JUST NOW </small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="profile-picture">
+                    <img src="images/profile2.jpg" alt="DP" />
+                  </div>
+                  <div class="notification-body">
+                    <b> Ademola Adewole </b> liked your post
+                    <small class="text-muted"> 2 MONTHS AGO </small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="profile-picture">
+                    <img src="images/profile5.jpg" alt="DP" />
+                  </div>
+                  <div class="notification-body">
+                    <b> Lawal Maryam </b> and <b> 284 others </b> liked your
+                    post
+                    <small class="text-muted"> 4 MINUTES AGO </small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="profile-picture">
+                    <img src="images/profile2.jpg" alt="DP" />
+                  </div>
+                  <div class="notification-body">
+                    <b> Fatia Balogun</b> commented on a post your are tagged in
+                    <small class="text-muted"> 1 HOUR AGO </small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="profile-picture">
+                    <img src="images/profile3.jpg" alt="DP" />
+                  </div>
+                  <div class="notification-body">
+                    <b> Fouz Fauiz </b> commented on your post
+                    <small class="text-muted"> 2 DAYS AGO </small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="profile-picture">
+                    <img src="images/profile4.jpg" alt="DP" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Keke Banjamin </b> liked your post
+                    <small class="text-muted"> 2 DAYS AGO </small>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="menu-item" id="message-notifications">
+              <span>
+                <i class="bx bx-envelope"
+                  ><small class="notification-count"> 6 </small>
+                </i>
+              </span>
+              <h3>Messages</h3>
+            </a>
+            <a class="menu-item">
+              <span> <i class="bx bx-bookmark"></i> </span>
+              <h3>Bookmarks</h3>
+            </a>
+            <a class="menu-item">
+              <span> <i class="bx bx-line-chart"></i> </span>
+              <h3>Analytics</h3>
+            </a>
+            <a class="menu-item" id="theme">
+              <span> <i class="bx bx-palette"></i> </span>
+              <h3>Themes</h3>
+            </a>
+            <a class="menu-item">
+              <span> <i class="bx bx-cog"></i> </span>
+              <h3>Settings</h3>
+            </a>
+          </div>
+          <!-- ----------------------------------SIDE BAR END ------------------------------------------ -->
+
+          <label for="create-posts" class="btn btn-primary"> Create Post</label>
+        </div>
+        <!-- ========================================LEFT MAIN SECTION END================================================== -->
+
+        <!-- ========================================MIDDLE MAIN SECTION START================================================== -->
+        <div class="middle">
+          <!-- -----------------------------------------STORIES------------------------------------------------------ -->
+          <div class="stories">
+            <div class="story">
+              <div class="profile-picture">
+                <img src="images/profile1.jpg" alt="DP" />
+              </div>
+              <p class="name">Your Story</p>
+            </div>
+
+            <div class="story">
+              <div class="profile-picture">
+                <img src="images/profile2.jpg" alt="DP" />
+              </div>
+              <p class="name">Idris Jack</p>
+            </div>
+
+            <div class="story">
+              <div class="profile-picture">
+                <img src="images/profile4.jpg" alt="DP" />
+              </div>
+              <p class="name">Mayham Ham</p>
+            </div>
+
+            <div class="story">
+              <div class="profile-picture">
+                <img src="images/profile3.jpg" alt="DP" />
+              </div>
+              <p class="name">Fauiz Faiz</p>
+            </div>
+
+            <div class="story">
+              <div class="profile-picture">
+                <img src="images/profile2.jpg" alt="DP" />
+              </div>
+              <p class="name">Mushabudeen</p>
+            </div>
+          </div>
+          <!-- --------------------------------------------END OF STORIES------------------------------------------------------- -->
+          <form action="" class="create-post">
+            <div class="profile-picture">
+              <img src="images/profile1.jpg" alt="DP" />
+            </div>
+            <input
+              type="text"
+              placeholder="What is on your mind, Lawal?"
+              id="create-post"
+            />
+            <input type="submit" value="post" class="btn btn-primary" />
+          </form>
+
+          <!-- ---------------------FEEDS--------------------------------------------- -->
+          <div class="feeds">
+            <!-- --------------------FEED 1----------------------- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="images/profile1.jpg" alt="DP" />
+                  </div>
+                  <div class="info">
+                    <h3>Demola Aduke</h3>
+                    <small> Nigeria, 13MINS AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="bx bx-dots-horizontal-rounded"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="images/feed-1.jpeg" alt="" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-button">
+                  <span> <i class="bx bx-heart"></i></span>
+                  <span><i class="bx bx-message-rounded-dots"></i></span>
+                  <span><i class="bx bxs-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span> <i class="bx bx-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span> <img src="images/profile1.jpg" alt="" /></span>
+                <span> <img src="images/profile2.jpg" alt="" /></span>
+                <span> <img src="images/profile1.jpg" alt="" /></span>
+                <p>Liked by <b>Ernest Achieve </b> and <b> 2,342 others </b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Lana Rose </b> Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Ducimus doloremque et qui delectus.
+                  <span class="harsh-tag"> #lifestyle</span>
+                </p>
+              </div>
+              <div class="comment text-muted">View all 277 comments</div>
+            </div>
+
+            <!-- --------------------FEED 2s----------------------- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="images/profile1.jpg" alt="DP" />
+                  </div>
+                  <div class="info">
+                    <h3>Sulaimon Hassanat</h3>
+                    <small> Nigeria, 13MINS AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="bx bx-dots-horizontal-rounded"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="images/feed-5.jpg" alt="" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-button">
+                  <span> <i class="bx bx-heart"></i></span>
+                  <span><i class="bx bx-message-rounded-dots"></i></span>
+                  <span><i class="bx bxs-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span> <i class="bx bx-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span> <img src="images/profile1.jpg" alt="" /></span>
+                <span> <img src="images/profile2.jpg" alt="" /></span>
+                <span> <img src="images/profile1.jpg" alt="" /></span>
+                <p>Liked by <b>Ernest Achieve </b> and <b> 2,342 others </b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Lana Rose </b> Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Ducimus doloremque et qui delectus.
+                  <span class="harsh-tag"> #lifestyle</span>
+                </p>
+              </div>
+              <div class="comment text-muted">View all 277 comments</div>
+            </div>
+
+            <!-- --------------------FEED 3----------------------- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="images/profile1.jpg" alt="DP" />
+                  </div>
+                  <div class="info">
+                    <h3>Demola Aduke</h3>
+                    <small> Nigeria, 13MINS AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="bx bx-dots-horizontal-rounded"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="images/feed-3.png" alt="" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-button">
+                  <span> <i class="bx bx-heart"></i></span>
+                  <span><i class="bx bx-message-rounded-dots"></i></span>
+                  <span><i class="bx bxs-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span> <i class="bx bx-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span> <img src="images/profile1.jpg" alt="" /></span>
+                <span> <img src="images/profile2.jpg" alt="" /></span>
+                <span> <img src="images/profile1.jpg" alt="" /></span>
+                <p>Liked by <b>Ernest Achieve </b> and <b> 2,342 others </b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Lana Rose </b> Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Ducimus doloremque et qui delectus.
+                  <span class="harsh-tag"> #lifestyle</span>
+                </p>
+              </div>
+              <div class="comment text-muted">View all 277 comments</div>
+            </div>
+
+            <!-- --------------------FEED 4----------------------- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="images/profile1.jpg" alt="DP" />
+                  </div>
+                  <div class="info">
+                    <h3>Demola Aduke</h3>
+                    <small> Nigeria, 13MINS AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="bx bx-dots-horizontal-rounded"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="images/feed-2.png" alt="" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-button">
+                  <span> <i class="bx bx-heart"></i></span>
+                  <span><i class="bx bx-message-rounded-dots"></i></span>
+                  <span><i class="bx bxs-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span> <i class="bx bx-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span> <img src="images/profile1.jpg" alt="" /></span>
+                <span> <img src="images/profile4.png" alt="" /></span>
+                <span> <img src="images/profile1.jpg" alt="" /></span>
+                <p>Liked by <b>Ernest Achieve </b> and <b> 2,342 others </b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Lana Rose </b> Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Ducimus doloremque et qui delectus.
+                  <span class="harsh-tag"> #lifestyle</span>
+                </p>
+              </div>
+              <div class="comment text-muted">View all 277 comments</div>
+            </div>
+
+            <!-- --------------------FEED 5----------------------- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="images/profile4.png" alt="DP" />
+                  </div>
+                  <div class="info">
+                    <h3>Doe John</h3>
+                    <small> Nigeria, 13MINS AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="bx bx-dots-horizontal-rounded"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="images/feed-4.jpg" alt="" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-button">
+                  <span> <i class="bx bx-heart"></i></span>
+                  <span><i class="bx bx-message-rounded-dots"></i></span>
+                  <span><i class="bx bxs-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span> <i class="bx bx-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span> <img src="images/profile1.jpg" alt="" /></span>
+                <span> <img src="images/profile2.jpg" alt="" /></span>
+                <span> <img src="images/profile1.jpg" alt="" /></span>
+                <p>Liked by <b>Ernest Achieve </b> and <b> 2,342 others </b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Lana Rose </b> Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Ducimus doloremque et qui delectus.
+                  <span class="harsh-tag"> #lifestyle</span>
+                </p>
+              </div>
+              <div class="comment text-muted">View all 277 comments</div>
+            </div>
+          </div>
+          <!-- ----------------------------END OF FEEDS----------------------------------------------------- -->
+        </div>
+        <!-- ========================================MIDDLE MAIN SECTION END================================================== -->
+
+        <!-- ========================================RIGHT MAIN SECTION START================================================== -->
+        <div class="right">
+          <div class="messages">
+            <div class="heading">
+              <h4>Messages</h4>
+              <i class="bx bx-dots-horizontal-rounded"></i>
+            </div>
+            <!-- -----------SEARCH BAR-- -->
+            <div class="search-bar">
+              <i class="bx bx-search"></i>
+              <input type="search" placeholder="Search" id="messages-search" />
+            </div>
+            <div class="category">
+              <h6 class="active">Primary</h6>
+              <h6>General</h6>
+              <h6 class="messsage-requests">Request (7)</h6>
+            </div>
+
+            <!-- -------------MESSAGEGS----------- -->
+            <div class="message">
+              <div class="profile-picture">
+                <img src="images/profile1.jpg" alt="" />
+                <div class="active"></div>
+              </div>
+              <div class="message-body">
+                <h5>Edme Quit</h5>
+                <p class="text-muted">Just woke up</p>
+              </div>
+            </div>
+            <div class="message">
+              <div class="profile-picture">
+                <img src="images/profile2.jpg" alt="" />
+              </div>
+              <div class="message-body">
+                <h5>Ishola Saheed</h5>
+                <p class="text-muted">Just woke up</p>
+              </div>
+            </div>
+            <div class="message">
+              <div class="profile-picture">
+                <img src="images/profile2.jpg" alt="" />
+                <div class="active"></div>
+              </div>
+              <div class="message-body">
+                <h5>Maryam Lawal</h5>
+                <p class="text-muted">Just woke up</p>
+              </div>
+            </div>
+            <div class="message">
+              <div class="profile-picture">
+                <img src="images/feed-4.jpg" alt="" />
+                <div class="active"></div>
+              </div>
+              <div class="message-body">
+                <h5>Abass Akande</h5>
+                <p class="text-muted">Just woke up</p>
+              </div>
+            </div>
+            <div class="message">
+              <div class="profile-picture">
+                <img src="images/profile1.jpg" alt="" />
+              </div>
+              <div class="message-body">
+                <h5>Maryam Lawal</h5>
+                <p class="text-muted">Just woke up</p>
+              </div>
+            </div>
+            <div class="message">
+              <div class="profile-picture">
+                <img src="images/profile1.jpg" alt="" />
+                <div class="active"></div>
+              </div>
+              <div class="message-body">
+                <h5>Faiz Fauzia</h5>
+                <p class="text-muted">Just woke up</p>
+              </div>
+            </div>
+          </div>
+          <!-- ----------------MESSAGES ENDS------------------- -->
+
+          <!-- -----------------FRIEND REQUESTS------------------- -->
+          <div class="friend-requests">
+            <h4>Request</h4>
+            <!-- -------- 1st request  ------->
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img src="images/profile1.jpg" alt="" />
+                </div>
+                <div>
+                  <h5>Hajia Bintu</h5>
+                  <p class="text-muted">8 Mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+            <!-- -------- 2nd request  ------->
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img src="images/profile1.jpg" alt="" />
+                </div>
+                <div>
+                  <h5>Hajia Bintu</h5>
+                  <p class="text-muted">8 Mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+            <!-- -------- 3rd request  ------->
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img src="images/profile1.jpg" alt="" />
+                </div>
+                <div>
+                  <h5>Hajia Bintu</h5>
+                  <p class="text-muted">8 Mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+            <!-- -------- 4th request  ------->
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img src="images/profile1.jpg" alt="" />
+                </div>
+                <div>
+                  <h5>Hajia Bintu</h5>
+                  <p class="text-muted">8 Mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ========================================RIGHT MAIN SECTION END================================================== -->
+      </div>
+    </main>
+    <!-- ========================================MAIN SECTION END ================================================== -->
+
+    <!-- ==============================================CUTOMIZE SECTION START ====================================== -->
+    <div class="customize-theme">
+      <div class="card">
+        <h2>Cutomize your view</h2>
+        <p class="text-muted">Manage your font size, color and background.</p>
+
+        <!-- -----------FONT SIZES------------------ -->
+        <div class="font-size">
+          <h4>Font Size</h4>
+          <div>
+            <h6>Aa</h6>
+            <div class="choose-sizes">
+              <span class="font-size-1"></span>
+              <span class="font-size-2 active"></span>
+              <span class="font-size-3"></span>
+              <span class="font-size-4"></span>
+              <span class="font-size-5"></span>
+            </div>
+            <h3>Aa</h3>
+          </div>
+        </div>
+
+        <!--------------- PRIMARY COLORS ----->
+        <div class="color">
+          <h4>Color</h4>
+          <div class="choose-color">
+            <span class="color-1 active"></span>
+            <span class="color-2"></span>
+            <span class="color-3"></span>
+            <span class="color-4"></span>
+            <span class="color-5"></span>
+          </div>
+        </div>
+
+        <!----------- BACKGROUND COLORS ------------------->
+        <div class="background">
+          <h4>Background</h4>
+          <div class="choose-bg">
+            <div class="bg-1 active">
+              <span></span>
+              <h5 for="bg-1">Light</h5>
+            </div>
+            <div class="bg-2">
+              <span></span>
+              <h5 for="bg-2">Dim</h5>
+            </div>
+            <div class="bg-3">
+              <span></span>
+              <h5 for="bg-3">Light Out</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
